@@ -92,5 +92,5 @@ jobs:
           files: |
             ${{ env.RELEASE_ZIP_FILENAME }}
             ${{ env.RELEASE_TAR_GZ_FILENAME }}
-            ${{ steps.create_kiosk_pro_version_file.outputs.filename }}
+            ${{ steps.create_kiosk_pro_version_file.outputs.filepath }}
           body: ${{ steps.build_changelog.outputs.changes }}
